@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <title>옥션 회원가입</title>
+ </head>
+ <body>
+ 	<div id="container">
+		<header id="head">
+			<span id="head_font">옥션 회원가입</span>
+		</header>
+		<div class="box">
+			<div class="idx_1">
+				<span class="idx_font">1 정보입력</span>
+			</div>
+			<form>
+				<input type="text" placeholder="이름" name="이름" />
+				<input type="text" placeholder="아이디" name="아이디" />
+				<div>
+					<input type="password" placeholder="비밀번호" name="비밀번호" class="with_help" />
+					<span class="help">비밀번호 도움말</span>
+				</div>
+				<input type="password" placeholder="비밀번호 재입력" name="비밀번호 재입력" />
+				<select class="input_hori">
+					<option>휴대폰 번호 선택</option>
+					<option>010</option>
+					<option>011</option>
+					<option>017</option>
+				</select>
+					<span>-</span>
+				<input type="text" name="휴대폰 가운데자리" class="input_hori" maxLength="4" />
+					<span>-</span>
+				<input type="text" name="휴대폰 끝자리" class="input_hori" maxLength="4" />
+				<div class="separate"></div>
+				<input type="text" placeholder="이메일" name="이메일" class="input_hori" />
+					<span >@</span>
+				<select class="input_hori email">
+					<option>선택</option>
+					<option>naver.com</option>
+					<option>gmail.com</option>
+				</select>
+			</form>
+		</div>
+		<div class="clear_div"></div>
+		<div class="box">
+			<div class="idx_2">
+				<span class="idx_font">2 약관동의</span>
+			</div>
+				<div class="all_choice">	
+					<input type="checkbox" id="terms_all" name="terms_all">
+					<label for="terms_all">전체 동의</label>
+				</div>
+				<div>
+				<div>
+					<input type="checkbox" id="terms_1" name="terms_1">
+					<label for="terms_1">옥션 이용약관<span class="notice">(필수)</span></label>
+					<span class="help term">전체보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_2" name="terms_2">
+					<label for="terms_2">전자금융거래 이용약관<span class="notice">(필수)</span></label>
+					<span class="help term">전체보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_3" name="terms_3">
+					<label for="terms_3">개인정보 수집 및 이용<span class="notice">(필수)</span></label>
+					<span class="help term">내용보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_4" name="terms_4">
+					<label for="terms_4">개인정보 제3자(판매자) 제공<span class="notice">(선택)</span></label>
+					<span class="help term">내용보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_5" name="terms_5">
+					<label for="terms_5">개인정보 수집 및 이용<span class="notice">(선택)</span></label>
+					<span class="help term">내용보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_6" name="terms_6">
+					<label for="terms_6">위치정보 이용약관<span class="notice">(선택)</span></label>
+					<span class="help term">전체보기</span>
+				</div>
+				<div>
+					<input type="checkbox" id="terms_7" name="terms_7">
+					<label for="terms_7">쿠폰, 캐시지급 등 혜택 알림 이메일, 문자<span class="notice">(선택)</span></label>
+				</div>
+				</div>
+		</div>
+		<div class="list">
+			<ul>
+				<li>
+					<span>가입은 14세 이상 고객만 가능합니다.<span>
+				</li>
+				<li>
+					<span>7세 이상 14세 미만 회원은 회원가입 후 모바일에서 본인인증, 법정대리인 인증을 진행하면 서비스를 이용하실 수 있습니다.<span>
+				</li>
+				<li>
+					<span>고객은 동의를 거부할 권리가 있으며 동의를 거부할 경우, 사이트 가입 또는 일부 서비스 이용이 제한됩니다.<span>
+				</li>
+			</ul>
+		</div>
+		<div class="btns">
+			<input type="button" value="회원가입" class="join" />
+			<input type="button" value="취소" class="cancle" />
+		</div>
+
+	</div>
+ </body>
+</html>
